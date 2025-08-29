@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro Torneo de Videojuegos</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre:</label></td>
+                <td><input type="text" id="nombre" name="nombre" required minlength="3" maxlength="15" pattern="[A-Za-z\s]+"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Correo electrónico:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Edad:</label></td>
+                <td><input type="number" id="edad" name="edad" required min="1" max="120"></td>
+            </tr>
+            <tr>
+                <td><label for="nickname">Nickname:</label></td>
+                <td><input type="text" id="nickname" name="nickname" required minlength="2" maxlength="50" pattern="[A-Za-z0-9_]+"></td>
+            </tr>
+            <tr>
+                <td><label for="categoria">Categoría:</label></td>
+                <td>
+                    <input required type="radio" id="principiante" name="categoria" value="principiante"><label for="principiante">Principiante</label>
+                    <input required type="radio" id="intermedio" name="categoria" value="intermedio"><label for="intermedio">Intermedio</label>
+                    <input required type="radio" id="experto" name="categoria" value="experto"><label for="experto">Experto</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="juegos_favoritos">Juegos favoritos:</label></td>
+                <td>
+                    <input type="checkbox" id="FIFA" name="juegos_favoritos" value="FIFA"><label for="FIFA">FIFA</label>
+                    <input type="checkbox" id="League of Legends" name="juegos_favoritos" value="League of Legends"><label for="League of Legends">League of Legends</label>
+                    <input type="checkbox" id="Minecraft" name="juegos_favoritos" value="Minecraft"><label for="Minecraft">Minecraft</label>
+                    <input type="checkbox" id="Rocket League" name="juegos_favoritos" value="Rocket League"><label for="Rocket League">Rocket League</label>
+                    <input type="checkbox" id="Clash Royale" name="juegos_favoritos" value="Clash Royale"><label for="Clash Royale">Clash Royale</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fecha_de_inscripcion">Fecha de Inscripción:</label></td>
+                <td>
+                    <input required type="date" id="fecha_de_inscripcion" name="fecha_de_inscripcion" max="2025-12-31" min="2025-01-01">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Restablecer</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
