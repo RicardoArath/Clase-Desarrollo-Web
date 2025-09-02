@@ -1,0 +1,1 @@
+Se cambio la semantica de la pagina al cambiar los "div class = nombre de semantica" por la semantica correspondiente. <div class = "header"> --> <header>, <div class = "title"> y <strong> --> <h1>
