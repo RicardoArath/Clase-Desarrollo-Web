@@ -1,1 +1,5 @@
-<!--Se cambio la semantica de la pagina al cambiar los "div class = nombre de semantica" por la semantica correspondiente. <div class = "header"> <header>, <div class = "title"> y <strong>  <h1> -->
+# README
+
+Se actualizaron las estructuras `<div>` del documento anterior para usar etiquetas semánticas de HTML5.  
+Se añadieron `<header>`, `<nav>`, `<main>`, `<article>`, `<aside>`, `<section>`, `<footer>`, `<time>`, `<q>` y `<address>` para mejorar la accesibilidad y la claridad del contenido.  
+También se reemplazaron títulos con `<h1>–<h4>` para jerarquizar mejor la información.
