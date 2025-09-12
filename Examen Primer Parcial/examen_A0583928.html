@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>EXAMEN HTML5 - Ricardo Arath Sanchez Aguirre</title>
+    <!-- 583928 Grupo 7 am -->
+</head>
+
+<body>
+    <header>
+        <h1>Congreso Universitario de Tecnologia 2025</h1>
+        <p>Este congreso se centra en las últimas tendencias y avances en tecnología.</p>
+    </header>
+    <nav class="navbar" aria-label="Navegacion principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#ponencias">Ponencias</a>
+            <a href="#registro">Registro</a>
+    </nav>
+    <main>
+        <section>
+            <ol>
+                <li><h2>Introducción a HTML5</h2></li>
+                    <p>Juan Rulfo</p>
+                <li><h2>Nuevas características de HTML5</h2></li>
+                    <p>María López</p>
+                <li><h2>API de Geolocalización</h2></li>
+                    <p>Carlos Pérez</p>
+                <li><h2>Almacenamiento local y sesiones</h2></li>
+                    <p>Laura Martínez</p>
+                <li><h2>Canvas y gráficos en HTML5</h2></li>
+                    <p>Javier Gómez</p>
+            </ol>
+        </section>
+        <section>
+            <form action="procesar_formulario.php" method="POST">
+                <table class="table table-bordered table-striped table-hover">
+                    <tr>
+                        <td>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="estudiante">Tipo de asistencia:</label>
+                            <input type="radio" id="estudiante" name="tipo" value="estudiante" checked> <label for="estudiante">Estudiante</label>
+                            <input type="radio" id="profesor" name="tipo" value="profesor"> <label for="profesor">Profesor</label>
+                            <input type="radio" id="invitado" name="tipo" value="invitado"> <label for="invitado">Invitado</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Enviar">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <aside>
+            <h3>Universidades Invitadas</h3>
+            <ul>
+                <li>Universidad de Monterrey</li>
+                <li>Universidad Autonoma de Nuevo Leon</li>
+                <li>Tecnologico de Monterrey</li>
+            </ul>
+        </aside>
+        <img alt="Mi amigo Arturo y yo comiendo tacos" src="TacosArturo.JPG" width="400px"> 
+    </main>
+    <footer>
+        <div>© Ricardo Arath Sanchez Aguirre</div>
+        <!--Utilice la etiqueta semantica de time ya que asi los buscadores podran leer mejor el archivo y entener la fecha en la que se realizo la pagina, ademas de que este tipo de etiquetas ayudan mucho en el SEO para aparecer mas arriba en las busquedas de Google-->
+        <time datetime="2025-09-12">Fecha del examen: Septiembre 12 del 2025</time>
+    </footer>
+</body>
+<!--
+1. ¿Por qué es recomendable usar <section> y <article> en lugar de solo <div>?
+    Para mejorar la legibilidad, es decir, la facilidad de lectura no para el usuario que utiliza la pagina, sino para el desarrollador y que pueda entender mejor la estructura de la pagina, ademas de que los lectores de codigo puedan entender mejor la estructura de la pagina y calificar un mejor SEO. Es una parte de buenas practicas de programacion y destacar entre los buscadores de google.
+2. ¿Qué ventaja ofrece el atributo alt en las imágenes?
+    Puede llegar a ser mucho mas accesible para personas que utilizan lector de pagina, como personas con discapacidades visuales por ejemplo, y tambien en el caso de que falle la carga de una imagen esta pueda ser de cierta forma como el try catch para que no parezca simplemente como un error de la pagina.
+3. Explica la diferencia entre <ol> y <ul>.
+    ol es ordered list y ul es unordered list, ol tiene numeracion en cada li que se aplique a diferencia de ul que solo son dots o puntos en cada li de la lista.
+4. ¿Por qué es importante declarar el <!DOCTYPE html> al inicio del documento?
+    Para que el navegador pueda interpretar correctamente el codigo HTML y asi evitar errores de interpretacion, ademas de que ayuda a que el navegador utilice el modo estandar y no el modo quirks que puede llegar a tener problemas de compatibilidad con ciertas etiquetas o estilos.
+-->
+</html>
