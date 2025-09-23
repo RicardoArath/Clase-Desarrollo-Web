@@ -1,0 +1,50 @@
+ul li:nth-child(1) {
+    color: green;
+}
+
+li:hover {
+    background-color: lightskyblue;
+}
+
+span{
+    display: inline;
+
+}
+
+.card{
+    width: 300px;
+    padding: 20px;
+    display: block;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.resaltado{
+    color: red;
+    font-weight: bold;
+    border-bottom: 2px dashed red;
+}
+
+.extra-info {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked ~ .extra-info {
+    display: block;
+}
+
